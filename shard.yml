@@ -1,13 +1,17 @@
 name: stumpy_utils
-version: 0.1.0
+version: 0.2.0
 
 authors:
   - Leon Rische <hello@l3kn.de>
 
 dependencies:
   stumpy_core:
-    git: https://github.com/l3kn/stumpy_core.git
+    git: https://github.com/stumpycr/stumpy_core.git
     version: -> 1.0.0
+  pcf-parser:
+    git: https://github.com/l3kn/pcf-parser.git
+    version: -> 0.1.0
+
 
 development_dependencies:
   minitest:
