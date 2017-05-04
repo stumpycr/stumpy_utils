@@ -162,4 +162,29 @@ end
 StumpyPNG.write(canvas, "circles.png")
 ```
 
-![Concentric circles](examples/circles.png)
+### `canvas.text(x, baseline_y, text, font : PCFParser::FONT, color = RGBA:BACK)`
+
+__NOTE:__ The fonts are not included in this repo.
+
+On linux, you can find them using `fc-list | grep '.pcf'`.
+(The files need to be unpacked using `gunzip` before using them)
+
+``` crystal
+require "stumpy_png"
+require "stumpy_utils"
+include StumpyPNG
+
+canvas = Canvas.new(500, 80, RGBA::WHITE)
+
+font1 = PCFParser::Font.from_file("./fonts/10x20.pcf")
+font2 = PCFParser::Font.from_file("./fonts/helvR18.pcf")
+
+text = "The quick brown fox jumps over the lazy dog"
+
+canvas.text(10, 30, text, font1)
+canvas.text(10, 60, text, font2, RGBA::BLUE)
+
+StumpyPNG.write(canvas, "text.png")
+```
+
+![Text samples in different fonts](examples/text.png)
