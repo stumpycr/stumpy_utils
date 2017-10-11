@@ -27,43 +27,6 @@ or
 
 ## RGBA
 
-### HTML/CSS Color Constants
-
-Adds 148 [HTML Colors](https://www.w3schools.com/colors/colors_names.asp)
-to the `RGBA` class.
-
-#### Naming Convention
-
-All uppercase, no seperators. For example:
-
-* AliceBlue => `RGBA::ALICEBLUE`
-* Red => `RGBA::RED`
-
-#### Example
-
-``` crystal
-require "stumpy_png"
-require "stumpy_utils"
-include StumpyPNG
-
-canvas = Canvas.new(200, 200) do |x, y|
-  case y
-  when 0...50
-    RGBA::RED
-  when 50...100
-    RGBA::YELLOW
-  when 100...150
-    RGBA::GREEN
-  else
-    RGBA::BLUE
-  end
-end
-
-StumpyPNG.write(canvas, "colors.png")
-```
-
-![Four colored rectangles](examples/colors.png)
-
 ### `color1.mix(color2 : RGBA, factor : Float)`
 
 Linear interpolation of two colors,
