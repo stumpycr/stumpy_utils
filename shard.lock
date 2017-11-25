@@ -1,0 +1,18 @@
+version: 1.0
+shards:
+  minitest:
+    github: ysbaddaden/minitest.cr
+    version: 0.3.6
+
+  pcf-parser:
+    github: l3kn/pcf-parser
+    version: 0.1.0
+
+  stumpy_core:
+    github: stumpycr/stumpy_core
+    version: 1.8.2
+
+  stumpy_png:
+    github: stumpycr/stumpy_png
+    version: 4.2.1
+
