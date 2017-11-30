@@ -7,14 +7,14 @@ authors:
 dependencies:
   stumpy_core:
     github: stumpycr/stumpy_core
-    version: 1.8.2
+    version: ~> 1.8
   pcf-parser:
     github: l3kn/pcf-parser
-    version: 0.1.0
+    version: ~> 0.1
 
 development_dependencies:
   minitest:
     github: ysbaddaden/minitest.cr
-    version: 0.3.6
+    version: ~> 0.3
 
 license: MIT
