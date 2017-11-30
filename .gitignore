@@ -1,0 +1,4 @@
+/.shards/
+/lib/
+/tmp/
+.icr_*.cr
