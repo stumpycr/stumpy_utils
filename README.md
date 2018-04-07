@@ -49,7 +49,7 @@ end
 StumpyPNG.write(canvas, "mix.png")
 ```
 
-![Gradient from red to yellow](examples/mix.png)
+![Gradient from red to yellow](spec/out/mix.png)
 
 ## Canvas
 
@@ -94,7 +94,7 @@ end
 StumpyPNG.write(canvas, "tree.png")
 ```
 
-![Tree generated using lines](examples/tree.png)
+![Tree generated using lines](spec/out/tree.png)
 
 ### `canvas.circle(center_x, center_y, radius, color = RGBA::BLACK, filled = false)`
 
@@ -124,6 +124,7 @@ end
 
 StumpyPNG.write(canvas, "circles.png")
 ```
+![Concentric circles](spec/out/circles.png)
 
 ### `canvas.text(x, baseline_y, text, font : PCFParser::FONT, color = RGBA:BACK)`
 
@@ -150,4 +151,4 @@ canvas.text(10, 60, text, font2, RGBA::BLUE)
 StumpyPNG.write(canvas, "text.png")
 ```
 
-![Text samples in different fonts](examples/text.png)
+![Text samples in different fonts](spec/out/text.png)
