@@ -1,0 +1,20 @@
+{
+  "projectName": "stumpy_utils",
+  "projectOwner": "stumpycr",
+  "files": [
+    "README.md"
+  ],
+  "imageSize": 100,
+  "commit": true,
+  "contributors": [
+    {
+      "login": "l3kn",
+      "name": "Leon",
+      "avatar_url": "https://avatars1.githubusercontent.com/u/2060269?v=4",
+      "profile": "http://leonrische.me",
+      "contributions": [
+        "code"
+      ]
+    }
+  ]
+}
