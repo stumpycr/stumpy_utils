@@ -16,5 +16,8 @@ development_dependencies:
   minitest:
     github: ysbaddaden/minitest.cr
     version: ~> 0.3
+  stumpy_png:
+    github: stumpycr/stumpy_png
+    version: "~> 4.3"
 
 license: MIT
