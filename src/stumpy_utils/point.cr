@@ -17,6 +17,10 @@ module StumpyCore
       Point.new x, y
     end
 
+    def self.distance(p1 : Point, p2 : Point)
+      Math.sqrt((p1.x - p2.x)**2 + (p1.y - p2.y)**2)
+    end
+
     def +(other : Point)
       Point.new(x + other.x, y + other.y)
     end
@@ -48,6 +52,10 @@ module StumpyCore
     def normalize
       m = mag
       Point.new(x / m, y / m)
+    end
+
+    def distance(other : Point)
+      Math.sqrt((x - other.x)**2 + (y - other.y)**2)
     end
 
     def self.unit
