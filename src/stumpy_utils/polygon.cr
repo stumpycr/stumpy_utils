@@ -62,7 +62,7 @@ module StumpyCore
         active_list.sort! do |e1, e2|
           v1 = e1.x - e2.x
           next v1 unless v1 == 0
-          (e1.delta_x / e1.delta_y) - (e2.delta_x / e2.delta_y)
+          (e1.delta_x // e1.delta_y) - (e2.delta_x // e2.delta_y)
         end
 
         # Fill pixels
