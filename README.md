@@ -30,32 +30,6 @@ or
 
 [![GitHub release](https://img.shields.io/github/release/stumpycr/stumpy_utils.svg)](https://github.com/stumpycr/stumpy_utils/releases)
 
-## RGBA
-
-### `color1.mix(color2 : RGBA, factor : Float)`
-
-Linear interpolation of two colors,
-factor must be in the range of 0.0 (just color1) to 1.0 (just color2).
-
-#### Example
-
-``` crystal
-require "stumpy_png"
-require "stumpy_utils"
-include StumpyPNG
-
-color1 = RGBA::RED
-color2 = RGBA::YELLOW
-
-canvas = Canvas.new(400, 50) do |x, y|
-  color1.mix(color2, x.to_f / 400)
-end
-
-StumpyPNG.write(canvas, "mix.png")
-```
-
-![Gradient from red to yellow](spec/out/mix.png)
-
 ## Canvas
 
 ### `canvas.line(x0, y0, x1, y1, color = RGBA::BLACK)`
@@ -133,11 +107,11 @@ StumpyPNG.write(canvas, "circles.png")
 
 ### `canvas.fill_pilygon(vertices, color = RGBA::BLACK)`
 
-Use the scanline algorithm to fill a polygon 
+Use the scanline algorithm to fill a polygon
 defined by an arbitrary set of vertices.
 
 _vertices_ should be an array of objects that respond to .x and .y methods.
-StumpyCore::Point is provided as a default implementation. 
+StumpyCore::Point is provided as a default implementation.
 
 #### Example
 
@@ -145,7 +119,7 @@ StumpyCore::Point is provided as a default implementation.
     require "stumpy_png"
     require "stumpy_utils"
     include StumpyPNG
-    
+
     canvas = Canvas.new(400, 400, RGBA::WHITE)
 
     # triangle
@@ -160,7 +134,7 @@ StumpyCore::Point is provided as a default implementation.
       Point.new Math.cos(angle)*radius + center.x, Math.sin(angle)*radius + center.y
     end.to_a
     canvas.fill_polygon points, RGBA::BLUE
-    
+
     # star
     center = Point.new 280.0, 150.0
     points = 0.upto(num_points*2).map do |n|
