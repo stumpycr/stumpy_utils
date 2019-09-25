@@ -2,7 +2,7 @@ version: 1.0
 shards:
   minitest:
     github: ysbaddaden/minitest.cr
-    version: 0.3.6
+    version: 0.5.0
 
   pcf-parser:
     github: l3kn/pcf-parser
@@ -10,9 +10,9 @@ shards:
 
   stumpy_core:
     github: stumpycr/stumpy_core
-    version: 1.8.2
+    version: 1.9.0
 
   stumpy_png:
     github: stumpycr/stumpy_png
-    version: 4.3.0
+    version: 4.5.2
 

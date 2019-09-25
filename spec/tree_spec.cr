@@ -9,7 +9,7 @@ record Branch, x0 : Int32, y0 : Int32, dir : Int32, length : Float64 do
   def y1; y0 + (Math.cos(dir * RADIANTS) * length).to_i; end
 
   def split
-    angle = rand(ANGLE) / 2
+    angle = rand(ANGLE) // 2
     [Branch.new(x1, y1, dir + angle, length * rand(FACTOR)),
     Branch.new(x1, y1, dir - angle, length * rand(FACTOR))]
   end
