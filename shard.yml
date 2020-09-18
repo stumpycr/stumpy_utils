@@ -9,7 +9,7 @@ dependencies:
     github: stumpycr/stumpy_core
     version: ~> 1.9
   pcf-parser:
-    github: l3kn/pcf-parser
+    github: stumpycr/pcf-parser
     version: ~> 0.1
 
 development_dependencies:
